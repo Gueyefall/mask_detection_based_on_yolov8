@@ -2,6 +2,7 @@
 import torch
 from ultralytics import YOLO, settings
 
+# Free up GPU memory
 torch.cuda.empty_cache()
 
 # Load the YOLO model

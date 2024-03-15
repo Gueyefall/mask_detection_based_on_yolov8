@@ -1,51 +1,51 @@
 # Description
-Le projet **mask_detection_based_on_yolov8** est un ensemble complet de ressources conçu pour la détection du port du masque.  
+The **mask_detection_based_on_yolov8** project is a comprehensive set of resources designed for mask-wearing detection.  
 
-Ce référentiel GitHub est la principale source de scripts Python et de données associées, formant un écosystème dédié à la recherche et au développement dans le domaine de la vision par ordinateur et de l'apprentissage automatique.  
+This GitHub repository is the primary source of Python scripts and associated data, forming an ecosystem dedicated to research and development in the field of computer vision and machine learning.  
 
-Pour mon cas, les entrainements ont été réalisés avec comme hardware :
+For my case, the trainings were conducted with the following hardware :
 - CPU Ryzen 5 6500H
 - GPU AMD RADEON RX 6600M
-# Installation du repo et création de l'environnement virtuel
-Pour installer ce projet, commencez par ouvrir le Terminal ou l'Invite de commande : Sur Windows, ouvrez l'Invite de Commande ou PowerShell. Sur macOS ou Linux, ouvrez le Terminal.
+# Repository Installation and Virtual Environment Setup
+To install this project, start by opening the Terminal or Command Prompt: On Windows, open Command Prompt or PowerShell. On macOS or Linux, open Terminal.
 
-Exécutez :
+Execute :
 `git clone https://github.com/Gueyefall/mask_detection_based_on_yolov8.git`
 
-PS : Il faudra se connecter avec ses identfiants git en ayant les droits d'accès au repo  
-Sinon, juste télécharger le zip avec le bouton dédié dans la liste déroulante "Code" plus haut.
+PS: You will need to log in with your git credentials having access rights to the repo.
+Otherwise, just download the zip using the dedicated button in the "Code" dropdown menu above.
 
-Pour la suite, d'abord vérifier si python (idéalement la 3.9 ou plus) est installé  
+Next, first check if python (ideally 3.9 or later) is installed  
 `python --version` ou `python3 --version`
 
-* Installer Python : Assurez-vous que Python est installé sur votre système. Vous pouvez le télécharger depuis le site officiel de Python. L'installation de Python inclut également pip (gestionnaire de paquets Python) et venv (module pour créer des environnements virtuels).
+* Install Python: Make sure Python is installed on your system. You can download it from the official Python website. Installing Python also includes pip (Python package manager) and venv (module for creating virtual environments).
 
-* Ensuite Installer pip,  le gestionnaire de paquets de Python. Il est nécessaire pour installer les dépendances. Si vous n'avez pas pip, installez-le en suivant les instructions sur le [site officiel de pip](https://pip.pypa.io/en/stable/installation/)
+* Then install pip, the Python package manager. It is necessary to install dependencies. If you do not have pip, install it by following the instructions on the [official pip website](https://pip.pypa.io/en/stable/installation/)
 
-* Pour pour de [détails sur les environnments virtuels](https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-and-using-virtual-environments)
+* For more [details on virtual environments](https://packaging.python.org/en/latest/tutorials/installing-packages/#creating-and-using-virtual-environments)
 
-Créer un Environnement Virtuel : Exécutez la commande suivante pour créer un environnement virtuel. *Remplacez nom_env* par le nom que vous souhaitez donner à votre environnement virtuel :  
+Create a Virtual Environment: Execute the following command to create a virtual environment. *Replace nom_env* with the name you want to give your virtual environment :  
 
-* Sur Windows : `python -m venv nom_env`  
-* Sur macOS et Linux : `python3 -m venv nom_env`
+* On Windows : `python -m venv nom_env`  
+* On macOS and Linux : `python3 -m venv nom_env`
 
-Activer l'Environnement Virtuel : Une fois l'environnement virtuel créé, vous devez l'activer :  
+Activate the Virtual Environment: Once the virtual environment is created, you need to activate it :  
 
-* Sur Windows : `.\nom_env\Scripts\activate`
-* Sur macOS et Linux : `source nom_env/bin/activate`
+* On Windows : `.\nom_env\Scripts\activate`
+* On macOS and Linux : `source nom_env/bin/activate`
 
-Lorsque l'environnement virtuel est activé, vous verrez généralement le nom de l'environnement virtuel affiché dans votre ligne de commande (au début, entre parenthèses).
+When the virtual environment is activated, you will typically see the name of the virtual environment displayed in your command line (at the beginning, in parentheses).
 
-*PS : Désactiver l'Environnement Virtuel : Lorsque vous avez terminé vos travaux dans l'environnement virtuel, vous pouvez le désactiver en exécutant :* `deactivate`
+*PS: Deactivating the Virtual Environment: When you are done working in the virtual environment, you can deactivate it by executing :* `deactivate`
 
-# Installation des  dépendances
-Exécutez la commande suivante pour installer toutes les dépendances listées dans requirements.txt :  
+# Dependencies Installation
+Execute the following command to install all dependencies listed in requirements.txt :  
 `pip install -r requirements.txt`
 
-De plus, vous devrez probablement installer des paquets supplémentaires avant de lancer YOLO...
+In addition, you will probably need to install additional packages before running YOLO....
 
-* Gérer les drivers pour la GPU (variable selon le fournisseur : nvidia, amd, etc.)  
+* Manage drivers for the GPU (varies by provider: nvidia, amd, etc.) 
 [Drivers NVIDIA CUDNN](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)  
 [Drivers AMD ROCm](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/tutorial/quick-start.html#rocm-install-quick)  
 
-* Pour la dépendance incontournable qu'est PyTorch (si non installé), se référer à : https://pytorch.org/
+* For the essential dependency that is PyTorch (if not installed), refer to : https://pytorch.org/

@@ -3,7 +3,7 @@ import torch
 from ultralytics import YOLO
 
 # Load the YOLO model
-model = YOLO("yolov8l-seg.pt")
+model = YOLO("mask_train_with_yolov8m/weights/best.pt")
 
 # Now, when performing inference or training, check if the model is on GPU
 print(next(model.parameters()).is_cuda)

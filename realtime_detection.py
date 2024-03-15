@@ -2,6 +2,9 @@
 import torch
 from ultralytics import YOLO
 
+# Free up GPU memory
+torch.cuda.empty_cache()
+
 # Load the YOLO model
 model = YOLO("mask_train_with_yolov8m/weights/best.pt")
 

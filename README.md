@@ -1,8 +1,11 @@
 # Description
-Le projet **mask_detection_based_on_yolov8** est un ensemble complet de ressources conçu pour la détection du prot du masque.  
+Le projet **mask_detection_based_on_yolov8** est un ensemble complet de ressources conçu pour la détection du port du masque.  
 
 Ce référentiel GitHub est la principale source de scripts Python et de données associées, formant un écosystème dédié à la recherche et au développement dans le domaine de la vision par ordinateur et de l'apprentissage automatique.  
 
+Pour mon cas, les entrainements ont été réalisés avec comme hardware :
+- CPU Ryzen 5 6500H
+- GPU AMD RADEON RX 6600M
 # Installation du repo et création de l'environnement virtuel
 Pour installer ce projet, commencez par ouvrir le Terminal ou l'Invite de commande : Sur Windows, ouvrez l'Invite de Commande ou PowerShell. Sur macOS ou Linux, ouvrez le Terminal.
 

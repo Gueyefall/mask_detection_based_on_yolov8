@@ -44,7 +44,7 @@ Execute the following command to install all dependencies listed in requirements
 
 In addition, you will probably need to install additional packages before running YOLO....
 
-* Manage drivers for the GPU (varies by provider: nvidia, amd, etc.) 
+* Manage drivers for the GPU (varies by provider: nvidia, amd, etc.)  
 [Drivers NVIDIA CUDNN](https://docs.nvidia.com/cuda/cuda-installation-guide-linux/index.html)  
 [Drivers AMD ROCm](https://rocm.docs.amd.com/projects/install-on-linux/en/latest/tutorial/quick-start.html#rocm-install-quick)  
 
